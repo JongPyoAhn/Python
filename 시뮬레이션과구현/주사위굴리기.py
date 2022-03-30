@@ -1,3 +1,4 @@
+#오래걸렸으니 다시풀 시간이 있다면풀고 아니면 pass
 n, m, x, y, k = map(int, input().split())
 arr = [list(map(int, input().split())) for _ in range(n)]
 inst = list(map(int, input().split()))
