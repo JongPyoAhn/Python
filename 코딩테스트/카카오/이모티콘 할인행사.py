@@ -1,4 +1,4 @@
-import sys
+
 totalSales = [[]]
 result = []
 def dfs(depth, sales, emoticons):
@@ -32,7 +32,7 @@ def solution(users, emoticons):
             totalSum += sum
             
         if emoticonPlus > answer[0]:
-            answer = [emoticonPlus, totalSum]
+            answer = [emoticonPlus, int(totalSum)]
         elif emoticonPlus == answer[0]:
             if totalSum > answer[1]:
                 answer = [emoticonPlus, int(totalSum)]
