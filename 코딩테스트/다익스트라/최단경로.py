@@ -1,9 +1,6 @@
+#파이썬은 튜플이면 첫번째 원소 기준으로 우선순위큐를 돌린다.
 import sys
 import heapq
-
-
-    
-    
 v, e = map(int, sys.stdin.readline().split())
 k = int(sys.stdin.readline())
 dist = [sys.maxsize for i in range(v + 1)]
