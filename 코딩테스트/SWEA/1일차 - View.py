@@ -1,3 +1,4 @@
+# OK
 #n <= 1000
 for t in range(10):
     n = int(input())
