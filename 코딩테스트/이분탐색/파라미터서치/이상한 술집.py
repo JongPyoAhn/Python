@@ -17,7 +17,7 @@ def determine(capacity):
 
 #구하고자 하는 값 : 최대한 많은양의 막걸리를 분배할 수 있는 용량
 #막걸리를 남으면 버린다.
-s, e, answer = 0, 1 << 31, 0
+s, e, answer = 0, (1 << 31) - 1, 0
 while s <= e:
     mid = (s + e) // 2
     if mid == 0:
@@ -29,7 +29,4 @@ while s <= e:
         answer = mid
     else:
         e = mid - 1
-print(1 << 31)
-print(1 << 32)
-print(1 << 63)
 print(answer)
